@@ -13,13 +13,13 @@ public class MainActivity extends AppCompatActivity {
     public String str ="";
     Character op = 'q';
     float i,num,numtemp;
-    EditText showResult;
+    TextView showResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        showResult = (EditText)findViewById(R.id.result_id);
+        showResult = (TextView)findViewById(R.id.result_id);
 
         getSupportActionBar().setTitle("Kalkulator Sederhana");
     }
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void perform() {
         str = "";
-        calculateNoShow();
+        calculate();
         numtemp = num;
     }
 
